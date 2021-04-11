@@ -1,0 +1,21 @@
+name,health,strength,attackDamage,attackChance1,attackChance2,attackType1,attackType2,defense
+Fire Elemental,25 * D4,10 + D6,strength + D8,50,50,basic,fire,Takes no damage from poison attacks
+Troll Beast,25 * D6,20 + D12,strength + D8,70,30,basic,fire,Heals D20 when attacked up to max health. However has no defense and no healing against fire attacks.
+Water Elemental,25 * D6,15 + D10,strength + D4,30,70,basic,frost,Takes half damage from wood attacks. Double damage from frost attacks
+Mutant Beaver,20 * D4,4 * D12,strength + D6,60,40,basic,wood,Immune to frost attacks. Wood attacks heal for D10 instead of doing damage.
+Giant Robot,100 + D100,100 + D20,strength + D4,70,30,basic,metal blade,Takes an extra D20 damage from acid attacks. Metal Blade damage is reduced D20 * 2 down to zero.
+Rust Monster,50 + D12,20 * D8,strength + D20,70,30,basic,acid,Immune to metal blade attacks. Acid attack damage is reduced D10 down to zero.
+Desert Elf,100 + D20,25 + D8,strength * D4,50,50,magic,fire,Immune to magic attacks. Takes half damage from fire attacks.
+Aquatic Elf,110 + D10,10 * D4,strength * D6,40,60,magic,frost,Immune to magic attacks. Takes half damage from frost attacks.
+Plutonium Dwarf,50 + D20,10 + D12,strength + D12,90,10,basic,poison,Immune to fire attacks. Takes half damage from poison attacks.
+Neutron Golem,10 * D4,8 * D6,strength * D100,10,90,basic,fire,Immune to poison damage. Fire attack heals for D12 instead of doing damage.
+Titan,100 * D100,100 * D100,strength * D100,50,50,basic,wood,Any basic attack only does 1 point of damage. Magic attacks do triple damage. Wood attacks do half of the damage.
+Miracle Mouse,2 * D4,2 * D4,strength + D20,10,90,basic,magic,Has a 99 chance to avoid any attack completely. Takes half damage from wood attack and one quarter damage from magic attack.
+Wood Golem,50 + D12,50 + D8,D20 * 2,50,50,basic,wood,Takes an extra D6 damage from metal blade attacks. Wood attack heals for half of the intended damage.
+Metal Golem,50 + D8,50 + D12,D10 * 4,50,50,basic,metal blade,Takes half damage from basic attacks. Double damage from wood attack. Metal blade attack damage reduced D20 down to zero.
+Blue Dragon,D4 * 100,4 * D8,4 * D12,80,20,magic,frost,Takes double damage from fire attacks. Immune frost attacks.
+Red Dragon,D20 * D20,2 * D20,3 * D20,70,30,magic,fire,Takes double damage from frost attacks. Immune fire attacks
+Magic Moose,10 * D20,10 * D4,strength + D20,60,40,basic,magic,Eats wood and heals for half of the intended damage up to max health recovery.
+Gnarled Root Beast,100 * D4,40 * D4,strength * D4,25,75,basic,wood,Takes half damage from magic attacks. Wood attack damage reduced by strength down to zero.
+Sea Monster,5 * D20,5 * D20,strength + D4,50,50,basic,frost,Immune to frost damage. Takes an extra D20 from fire damage.
+Mutant Eagle,1 * D20,5 * D4,strength + D12,75,25,basic,fire,Has 75 chance to dodge basic attacks. Takes half damage from frost attacks

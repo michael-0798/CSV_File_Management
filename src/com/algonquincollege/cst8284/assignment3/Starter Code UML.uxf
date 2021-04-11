@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>370</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>CharacterRecord
+--
+-name:String
+-health:String
+-strength:String
+-attackDamage:String
+-attackChance1:String
+-attackChance2:String
+-attackType1:String
+-attackType2:String
+-defense:String
+--
++CharacterRecord()
++getName():String
++setName(name:String):void
++getHealth():String
++setHealth(health:String):void
++getStrength():String
++setStrength(strength:String):void
++getAttackDamage():String
++setAttackDamage(attackDamage:String):void
++getAttackChance1():int
++setAttackChance1(attackChance1:int):void
++getAttackChance2():int
++setAttackChance2(attackChance2:int):void
++getAttackType1():String
++setAttackType1(attackType1:String):void
++getAttackType2():String
++setAttackType2(attackType2:String):void
++getDefense():String
++setDefense(defense:String):void
++toString():String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>160</y>
+      <w>270</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>CharacterRecordUtility
+--
+-columnNames:String
+-records:List&lt;CharacterRecord&gt;
+--
+processFile():void
+loadFile():void
+sortName():void
+sortAttackChance1():void
+saveFile(fileName:String):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>20</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ProgramStartUp
+--
+
+--
+_+main(args:String[]):void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>750</x>
+      <y>120</y>
+      <w>340</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+The starter code does not have the records field, as shown here. 
+The recommended implementation for this assignment is 
+List&lt;T&gt; records = new ArrayList&lt;T&gt;();
+Where T is CharacterRecord.
+And both List and ArrayList come from package java.util.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>200</y>
+      <w>60</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;30.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>220</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>80</y>
+      <w>40</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>20.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>420</y>
+      <w>550</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>NameComparator
+--
+
+--
++compare(record1:CharacterRecord, record2:CharacterRecord):int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>310</y>
+      <w>550</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>AttackChance1Comparator
+--
+
+--
++compare(record1:CharacterRecord, record2:CharacterRecord):int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>240</y>
+      <w>70</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>50.0;210.0;10.0;210.0;10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>270</y>
+      <w>60</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>40.0;70.0;10.0;70.0;10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>130</x>
+      <y>500</y>
+      <w>880</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Classes NameComparator, and AttackChance1Comparator, were not provided as part of the starter code.
+You will need to create them. They are created and called from the sortName()
+and sortAttackChance1() methods respectively.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>430</y>
+      <w>60</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>20.0;90.0;40.0;90.0;40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>350</y>
+      <w>80</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>20.0;190.0;60.0;190.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
